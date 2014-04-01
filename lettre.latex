@@ -1,0 +1,56 @@
+\documentclass[11pt]{letter}
+\usepackage[utf8]{inputenc}
+
+\address{$recipient.name$ \
+	$if(recipient.address)$ \\ $recipient.address$ $endif$ \
+	$if(recipient.city)$ \\ $recipient.city$ $endif$ \
+}
+
+$if(author.name)$
+\signature{$author.name$}
+$endif$
+
+$if(date)$
+\date{$date$}
+$else$
+\date{}
+$endif$
+
+\begin{document}
+
+\begin{letter}{}
+
+% my own address
+
+$if(author.name)$
+	$author.name$ \
+	$if(author.address)$ \\ $author.address$ $endif$ \
+	$if(author.city)$ \\ $author.city$ $endif$ \
+$endif$
+
+% if there's a subject, open with it and show the "opening"
+$if(re)$
+	\opening{\emph{Objet :} $re$}
+	$if(opening)$ $opening$ $endif$
+% if not, use the opening
+$else$
+	$if(opening)$
+	\opening{$opening$}
+	$else$
+	\opening{}
+	$endif$
+$endif$
+
+$body$
+
+$if(closing)$
+\closing{$closing$}
+$else$
+\closing{\ }
+$endif$
+
+
+\end{letter}
+\end{document}
+
+
