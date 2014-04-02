@@ -1,5 +1,6 @@
 \documentclass[11pt]{letter}
 \usepackage[utf8]{inputenc}
+\usepackage[frenchb]{babel}
 
 \address{$recipient.name$ \
 	$if(recipient.address)$ \\ $recipient.address$ $endif$ \
