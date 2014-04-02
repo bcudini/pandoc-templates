@@ -1,12 +1,23 @@
 ---
-vim: ft=markdown tw=80
-title:  'Lettre à Martine'
-author: Martine ; 123 soleil ; 38100 Grenoble
-re: 
-opening: Madame, Monsieur
----
+vim: ft=pandoc tw=80 et ts=2
+lang: fr
+title: Demande d'accès aux informations me concernant
+author:
+  name: Éric Piolle
+  address: Hôtel de ville
+  city: 38000 Grenoble
+recipient:
+  name: |
+    SEMITAG Direction \
+    Développement Marketing
+  address: CS 70258
+  city: 38044 GRENOBLE cedex 9
+re: Je souhaite exercer mon droit d’accès
+opening: Madame, Monsieur,
+date: Grenoble, le 2 avril 2014
+encl: photocopie de ma pièce d'identité
+...
 
-Chère Martine,
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
 Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed,
@@ -21,6 +32,5 @@ luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed
 pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales
 hendrerit.
 
-Et Martine, elle écrit en UTF-8 ?
 
 

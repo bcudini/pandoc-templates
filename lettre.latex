@@ -50,6 +50,13 @@ $else$
 \closing{\ }
 $endif$
 
+$if(ps)$
+ \ps{$ps$}
+$endif$
+
+$if(encl)$
+ \encl{$encl$}
+$endif$
 
 \end{letter}
 \end{document}
