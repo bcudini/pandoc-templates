@@ -1,4 +1,5 @@
 \documentclass[11pt]{letter}
+\usepackage{graphics}
 \usepackage[utf8]{inputenc}
 \usepackage[frenchb]{babel}
 
