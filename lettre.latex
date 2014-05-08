@@ -3,10 +3,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage[frenchb]{babel}
 
+$if(recipient.name)$
 \address{$recipient.name$ \
 	$if(recipient.address)$ \\ $recipient.address$ $endif$ \
 	$if(recipient.city)$ \\ $recipient.city$ $endif$ \
 }
+$endif$
 
 $if(author.name)$
 \signature{$author.name$}
